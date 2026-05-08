@@ -195,3 +195,46 @@ h1{
     /* verde más oscuro */
     background-color: #388e3c;
 }
+
+/* responsive para celulares */
+@media (max-width: 768px){
+
+    .card-producto{
+
+        /* ahora los elementos se ponen uno debajo del otro */
+        flex-direction: column;
+
+        /* centramos contenido */
+        text-align: center;
+    }
+
+    .card-producto img{
+
+        /* imagen más grande en celular */
+        width: 100%;
+
+        /* altura automática */
+        height: auto;
+    }
+
+    .info-producto{
+
+        /* quitamos margen lateral */
+        margin-left: 0;
+
+        /* espacio arriba y abajo */
+        margin: 20px 0;
+    }
+
+    .subtotal{
+
+        /* espacio arriba */
+        margin-top: 20px;
+    }
+
+    #total{
+
+        /* texto un poco más pequeño */
+        font-size: 30px;
+    }
+}
