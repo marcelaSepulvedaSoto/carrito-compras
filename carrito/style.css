@@ -1,0 +1,197 @@
+/* estilos generales de toda la página */
+body{
+
+    /* tipo de letra */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* color de fondo */
+    background-color: #f4f4f4;
+
+    /* espacio interior alrededor de la página */
+    padding: 40px;
+}
+
+/* estilos del título principal */
+h1{
+
+    /* centramos el texto */
+    text-align: center;
+
+    /* espacio debajo del título */
+    margin-bottom: 40px;
+}
+
+/* contenedor principal de productos */
+#productos{
+
+    /* usamos flexbox */
+    display: flex;
+
+    /* los productos se ordenan en columna */
+    flex-direction: column;
+
+    /* espacio entre tarjetas */
+    gap: 20px;
+}
+
+/* tarjeta individual de cada producto */
+.card-producto{
+
+    /* color de fondo blanco */
+    background-color: white;
+
+    /* bordes redondeados */
+    border-radius: 20px;
+
+    /* espacio interior */
+    padding: 20px;
+
+    /* activamos flexbox */
+    display: flex;
+
+    /* alineamos verticalmente */
+    align-items: center;
+
+    /* separa elementos hacia los lados */
+    justify-content: space-between;
+
+    /* sombra de la tarjeta */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* imagen del producto */
+.card-producto img{
+
+    /* ancho de imagen */
+    width: 180px;
+
+    /* alto de imagen */
+    height: 120px;
+
+    /* evita deformación de la imagen */
+    object-fit: cover;
+
+    /* bordes redondeados */
+    border-radius: 10px;
+}
+
+/* información del producto */
+.info-producto{
+
+    /* ocupa espacio restante */
+    flex: 1;
+
+    /* separación hacia la izquierda */
+    margin-left: 30px;
+}
+
+/* título del producto */
+.info-producto h2{
+
+    /* espacio debajo del título */
+    margin-bottom: 10px;
+}
+
+/* párrafos del producto */
+.info-producto p{
+
+    /* tamaño del texto */
+    font-size: 18px;
+}
+
+/* sección del subtotal */
+.subtotal{
+
+    /* centramos el texto */
+    text-align: center;
+
+    /* ancho mínimo */
+    min-width: 150px;
+}
+
+/* texto subtotal */
+.subtotal h3{
+
+    /* color gris */
+    color: gray;
+}
+
+/* precio subtotal */
+.subtotal p{
+
+    /* color verde */
+    color: green;
+
+    /* tamaño grande */
+    font-size: 28px;
+
+    /* negrita */
+    font-weight: bold;
+}
+
+/* total final */
+#total{
+
+    /* centramos texto */
+    text-align: center;
+
+    /* espacio arriba */
+    margin-top: 40px;
+
+    /* tamaño grande */
+    font-size: 40px;
+
+    /* color verde */
+    color: green;
+}
+
+/* contenedor de botones + y - */
+.controles{
+
+    /* flexbox */
+    display: flex;
+
+    /* alineamos verticalmente */
+    align-items: center;
+
+    /* espacio entre elementos */
+    gap: 15px;
+
+    /* espacio arriba */
+    margin-top: 15px;
+}
+
+/* botones + y - */
+.controles button{
+
+    /* ancho */
+    width: 35px;
+
+    /* alto */
+    height: 35px;
+
+    /* quitamos borde */
+    border: none;
+
+    /* forma circular */
+    border-radius: 50%;
+
+    /* color de fondo */
+    background-color: #4caf50;
+
+    /* color del texto */
+    color: white;
+
+    /* tamaño del símbolo */
+    font-size: 20px;
+
+    /* cambia el cursor a mano */
+    cursor: pointer;
+}
+
+/* efecto cuando pasamos el mouse */
+.controles button:hover{
+
+    /* verde más oscuro */
+    background-color: #388e3c;
+}
